@@ -91,14 +91,20 @@ ul li a:hover {
     color: white;
     padding: 10px 20px;
     border: 1px solid white;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.50s;
 }
 
 #main a:hover {
     background: orange;
+    border: none;
     color: black;
     font-weight: bold;
+    box-shadow:  0 0 10px #000,
+                 0 0 40px #000,
+                 0 0 80px #000;
 }
-
 
 /* Media Queries for responsiveness */
 
