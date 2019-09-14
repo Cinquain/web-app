@@ -54,8 +54,9 @@ ul li a {
 }
 
 ul li a:hover {
-    background: white;
+    background: orange;
     color:black;
+    font-weight: bold;
 }
 
 /* Body of Webpage */
@@ -108,7 +109,32 @@ ul li a:hover {
 
 /* Media Queries for responsiveness */
 
+@media (min-width: 768px) {
+     a img {
+        width: 200px;
+     }
+
+     ul li a {
+        font-size: 1.2em;
+        padding: 5px 10px;
+     }
+
+     #main h1 {
+        font-size: 7em;
+     }
+
+     #main h3 {
+        font-size: 3em;
+     }
+
+     #main a {
+        font-size: 1.4em;
+     }
+}
+
 @media (min-width: 1200px) {
+
+    /* Header bar CSS */
 
     #navBar {
         height: 90px;
@@ -131,6 +157,9 @@ ul li a:hover {
         font-size: 1.3em;
         padding: 10px 20px;
     }
+
+    /* Page Specific */
+
 
     #main h1 {
         font-size: 7em;
