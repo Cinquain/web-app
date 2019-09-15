@@ -51,12 +51,14 @@ ul li a {
     text-decoration: none;
     font-size: 0.8em;
     padding: 2px 5px;
+    transition: all 0.3s ease;
 }
 
 ul li a:hover {
     background: orange;
     color:black;
     font-weight: bold;
+    box-shadow:  0 0 5px #fff;
 }
 
 /* Body of Webpage */
@@ -94,7 +96,7 @@ ul li a:hover {
     border: 1px solid white;
     text-transform: uppercase;
     overflow: hidden;
-    transition: 0.50s;
+    transition: all 0.5s ease;
 }
 
 #main a:hover {
@@ -132,7 +134,7 @@ ul li a:hover {
      }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
 
     /* Header bar CSS */
 
