@@ -13,6 +13,8 @@ body {
     height: 100%;
 }
 
+/* Nav Section of Webpage */
+
 
 #navBar {
     height: 10vh;
@@ -44,12 +46,17 @@ ul li a {
     text-decoration: none;
     font-size: 0.8em;
     padding: 2px 5px;
+    transition: all 0.3s ease;
 }
 
 ul li a:hover {
     background: orange;
     color:black;
+    box-shadow: 0 0 5px #fff;
 }
+
+/* Custom CSS for Webpage */
+
 
 .main {
     height: auto;
