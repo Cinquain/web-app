@@ -103,6 +103,40 @@ ul li a:hover {
                 0 0 80px black;
 }
 
+@media (min-width: 735px) {
+    a img {
+        width: 200px
+    }
+
+    ul {
+        margin-top: 20px;
+        margin-right: 20px; 
+    }
+
+    ul li a {
+        font-size: 1.3em;
+        padding: 10px 20px;
+    }
+
+    .content h1 {
+        font-size: 4em;
+        letter-spacing: 1px;
+    }
+    
+    .content p {
+        margin-bottom: 40px;
+        font-size: 2em;
+    }
+
+    .content a {
+        font-size: 1.5em;
+        color: white;
+        text-decoration: none;
+        padding: 10px 30px;
+        border: 1px solid white;
+    }
+
+}
 
 
 @media (min-width: 1024px) {

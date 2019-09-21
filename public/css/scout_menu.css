@@ -10,7 +10,7 @@
 body {
     background: url(/assets/abandoned.jpg);
     background-size: cover;
-    background-position: fixed;
+    background-position: center;
     width: 100%;
     height: 100vh;
 }
@@ -78,13 +78,17 @@ ul li a:hover {
     font-weight: bold;
 }
 
-
 .outer {
    margin-top: 8px;
    justify-content: center;
    align-items: center;
    width: 100%;
    height: auto;
+}
+
+.outer a {
+    text-decoration: none;
+    margin-bottom: 5px;
 }
 
 .box {
@@ -97,70 +101,56 @@ ul li a:hover {
     align-items: center;
     text-align: center;
     display: flex;
-    margin-top: 5px;
     transition: 0.6s;
-}
-
-.hide {
-    display: none;
 }
 
 
 .box p {
     color: white;
+    font-weight: bold;
 }
 
 .box:hover {
-    box-shadow: 0 0 20px white;
-    transform: scale(1.5);
+    box-shadow: 0 0 20px white,
+                0 0 40px orange;
+    transform: scale(1.2);
     transition: 0.6s;
-}
-
-.box:hover p {
-    display: initial;
-}
-
-.box1 {
-    background: url(/assets/rules.jpg);
-    background-size: cover;
-    overflow: hidden;
-    background-position: center;
-}
-
-.box2 {
-    background: url(/assets/japan.jpg);
-    background-size: cover;
-    overflow: hidden;
-    background-position: center;
-}
-
-.box3 {
-    background: url(/assets/Community.jpg);
-    background-size: cover;
-    overflow: hidden;
-    background-position: center;
 }
 
 @media (min-width: 375px) {
 
     .main h1 {
-        margin-top: 40px;
+        margin-top: 30px;
     }
 
     .outer {
-        margin-top: 60px;
+        margin-top: 30px;
     }
 
     .box {
-        margin-top: 20px;
+        margin-top: 26px;
     }
 }
 
 
 @media (min-width: 735px) {
 
+    a img {
+        width: 200px;
+    }
+
+    ul {
+        margin-top: 20px;
+        margin-right: 20px; 
+    }
+
+    ul li a {
+        font-size: 1.3em;
+        padding: 10px 20px;
+    }
 
     .main h1 {
+        margin-top: 40px;
         font-size: 4em;
         letter-spacing: 2px;
     }    
@@ -173,11 +163,15 @@ ul li a:hover {
     }
 
     .box {
-        height: 250px;
-        width: 250px;
+        height: 270px;
+        width: 270px;
         border-radius: 50%;
         margin: 0% 20px;
-        margin-top: -160px;
+        margin-top: -200px;
+    }
+
+    .box p {
+        font-size: 2em;
     }
 }
 
@@ -223,19 +217,21 @@ ul li a:hover {
         height: 80%;
     }
 
+    .outer a {
+        margin: 0% 2%;
+    }
+
     .box {
         height: 450px;
         width: 450px;
         border-radius: 50%;
-        margin: 0% 5%;
         margin-top: -160px;
     }
 
     .box p {
         color: white;
-        font-size: 2em;
+        font-size: 2.3em;
         font-weight: bold;
-        display: none;
     }
 
 

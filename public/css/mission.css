@@ -1,0 +1,39 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+}
+
+#home {
+    width: 100px;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#navbar {
+    
+}
+
+
+@media (min-width: 735px) {
+    #home {
+        width: 200px;
+    }
+}
+
+@media (min-width: 1024px) {
+    #home {
+        width: 250px;
+    }
+}
+
+
+@media (min-width: 1200px) {
+
+}
+    
