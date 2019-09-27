@@ -1,35 +1,167 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Asap&display=swap');
+
+
 * {
-    padding: 0%;
     margin: 0%;
+    padding: 0%;
     box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
 }
 
 body {
-    background: black;
+    background: url(/assets/Scout\ Secrets.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
 }
 
-#home {
-    width: 100px;
+/* Nav section of Webpage */
+
+#navBar {
+    height: 50px;
+    width: 100%;
+}
+
+a img {
+    padding-top: 10px;
+    padding-left: 10px;
+    width: 120px;
     height: auto;
+    float: left;
+}
+
+ul {
+    float: right;
+    list-style: none;
+    margin-right: 10px;
     margin-top: 10px;
-    margin-left: 10px;
 }
 
-#navbar {
-    
+ul li {
+    display: inline;
+    margin: 4px;
 }
 
+ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 0.8em;
+    padding: 2px 5px;
+    transition: all 0.3s ease;
+}
+
+ul li a:hover {
+    background: black;
+    color: orange;
+    font-weight: bold;
+    box-shadow:  0 0 5px #fff;
+}
+
+/* Body of Webpage */
+
+
+#outer {
+    width: 100vw;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#content {
+    color: white;
+    text-align: center;
+    height: auto;
+    width: 100%;
+}
+
+#content h1 {
+    font-size: 2em;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+}
+
+#content a {
+    font-size: 1.2em;
+    color: white;
+    text-decoration: none;
+    padding: 5px 14px;
+    border: 1px solid white;
+    transition: all 0.3s ease-in-out;
+}
+
+#content a:hover {
+    background:orange;
+    color: black;
+    font-weight: bold;
+    box-shadow: 0 0 10px black,
+                0 0 40px black,
+                0 0 80px black;
+}
 
 @media (min-width: 735px) {
     #home {
         width: 200px;
     }
+
+    #content a {
+        font-size: 1.5em;
+        color: white;
+        text-decoration: none;
+        padding: 10px 30px;
+        border: 1px solid white;
+    }
+
 }
 
 @media (min-width: 1024px) {
-    #home {
-        width: 250px;
+   
+    /* Header bar CSS */
+
+    #navBar {
+        height: 90px;
     }
+
+    .outer {
+        height: 93vh;
+    }
+
+    a img {
+        width: 250px
+    }
+
+    ul {
+        margin-top: 20px;
+        margin-right: 20px; 
+    }
+
+    ul li a {
+        font-size: 1.3em;
+        padding: 10px 20px;
+    }
+
+    /* Page Specific */
+
+    #content h1 {
+        font-size: 3.2em;
+        letter-spacing: 3px;
+    }
+    
+
+    #content a {
+        font-size: 1.5em;
+        color: white;
+        text-decoration: none;
+        padding: 10px 30px;
+        border: 1px solid white;
+    }
+
+
 }
 
 

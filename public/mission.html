@@ -9,32 +9,75 @@
         <link rel="stylesheet" text="text/css" href="/css/mission.css">
         <link rel="shortcut icon" href="/assets/favicon.png">
         <title>Scout Community's Mission</title>
+
+           <!-- Global site tag (gtag.js) - Google Analytics -->
+           <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125997058-3"></script>
+           <script>
+           window.dataLayer = window.dataLayer || [];
+           function gtag(){dataLayer.push(arguments);}
+           gtag('js', new Date());
+           gtag('config', 'UA-125997058-3');
+           </script>
+   
+   
+                   <!-- Facebook Pixel Code -->
+           <script>
+                   !function(f,b,e,v,n,t,s)
+                   {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+                   n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+                   if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+                   n.queue=[];t=b.createElement(e);t.async=!0;
+                   t.src=v;s=b.getElementsByTagName(e)[0];
+                   s.parentNode.insertBefore(t,s)}(window, document,'script',
+                   'https://connect.facebook.net/en_US/fbevents.js');
+                   fbq('init', '236874703660753');
+                   fbq('track', 'PageView');
+           </script>
+           <noscript>
+               <img height="1" width="1" style="display:none"
+               src="https://www.facebook.com/tr?id=236874703660753&ev=PageView&noscript=1"/>
+           </noscript>
+               <!-- End Facebook Pixel Code -->   
     </head>
 
 
     <body>
 
-        <a href="index.html">
-            <img id="home" src="/assets/logo.png">
-        </a>
+        <div id="navBar">
 
-        <ul id="navbar">
-            <li>
-                <a href="our_story.html">
-                    Our Story
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    Blog
-                </a>
-            </li>
-            <li>
-                <a href="scout.html">
-                    Scout 
-                </a>
-            </li>
-        </ul>
+            <a href="index.html"> 
+                <img src="/assets/logo.png">
+            </a>
 
+            <ul>
+                <li>
+                    <a href="our_story.html">
+                        Our Story
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Blog
+                    </a>
+                </li>
+                <li>
+                    <a href="scout.html">
+                        Scout 
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+        <div id="outer">
+            <div id="content">
+                <h1>
+                    The mission of scouts is to explore cities 
+                </h1>
+
+                <a href="https://www.youtube.com/watch?v=UGopjj295Iw&t=8s" target="_blank">
+                    Watch Video 
+                </a>
+            </div>
+        </div>
     </body>
 </html>
