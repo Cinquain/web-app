@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+}
+
+
+/* Nav Section of Webpage */
+
+#navBar {
+    height: 40px;
+    width: 100%;
+}
+
+a img {
+    padding-top: 10px;
+    padding-left: 10px;
+    width: 120px;
+    height: auto;
+    float: left;
+}
+
+ul {
+    float: right;
+    list-style: none;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+ul li {
+    display: inline;
+    margin: 4px;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.8em;
+    padding: 2px 5px;
+    transition: all 0.3s ease;
+}
+
+ul li a:hover {
+    background: orange;
+    color:black;
+    font-weight: bold;
+    box-shadow:  0 0 5px #fff;
+}
+
+.outer {
+    width: 100vw;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.content {
+    margin-top: -40px;
+    color: white;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid red;
+    
+}
+
+.box {
+    width: 50%;
+    display: flex;
+    text-align: center;
+    border: 2px solid white;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.box h2 {
+    letter-spacing: 3px;
+    font-family: 'Lato', sans-serif;
+}
+
+.box a {
+    float: right;
+    font-size: 1.2em;
+    color: white;
+    text-decoration: none;
+    padding: 5px 14px;
+    border: 1px solid white;
+    transition: all 0.3s ease-in-out;
+}
+
+
+@media (min-width: 735px) {
+    a img {
+        width: 200px
+    }
+
+    ul {
+        margin-top: 20px;
+        margin-right: 20px; 
+    }
+
+    ul li a {
+        font-size: 1.3em;
+        padding: 10px 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    #navBar {
+        height: 90px;
+    }
+
+    a img {
+        width: 250px
+    }
+
+    ul {
+        margin-top: 20px;
+        margin-right: 20px; 
+    }
+
+    ul li a {
+        font-size: 1.3em;
+        padding: 10px 20px;
+    }
+}
