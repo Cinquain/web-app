@@ -13,7 +13,6 @@ body {
     background-size: cover;
 }
 
-
 /* Nav Section of Webpage */
 
 #navBar {
@@ -76,27 +75,28 @@ ul li a:hover {
 }
 
 .box {
-    width: 50%;
     display: flex;
     text-align: center;
+    justify-content: center;
+    align-items: center;
     border: 2px solid white;
     margin: 0 auto;
     margin-bottom: 20px;
+    height: 25vh;
+    width: 50vw;
 }
+
 
 .box h2 {
     letter-spacing: 3px;
     font-family: 'Lato', sans-serif;
+    text-align: center;
+    width: 100%;
+    display: none;
 }
 
-.box a {
-    float: right;
-    font-size: 1.2em;
-    color: white;
-    text-decoration: none;
-    padding: 5px 14px;
-    border: 1px solid white;
-    transition: all 0.3s ease-in-out;
+.box:hover h2 {
+    display: initial;
 }
 
 
@@ -113,6 +113,10 @@ ul li a:hover {
     ul li a {
         font-size: 1.3em;
         padding: 10px 20px;
+    }
+
+    .box h2 {
+        font-size: 1.5em;
     }
 }
 
@@ -134,5 +138,14 @@ ul li a:hover {
     ul li a {
         font-size: 1.3em;
         padding: 10px 20px;
+    }
+
+    .box {
+        height: 27vh;
+        width: 40vw;
+    }
+
+    .box h2 {
+        font-size: 2.5em;
     }
 }
