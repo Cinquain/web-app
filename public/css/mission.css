@@ -11,6 +11,7 @@
 
 body {
     background: url(/assets/Scout\ Secrets.jpg);
+    backdrop-filter: brightness(0.8);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -48,7 +49,7 @@ ul li {
 }
 
 ul li a {
-    color: black;
+    color: white;
     text-decoration: none;
     font-size: 0.8em;
     padding: 2px 5px;
@@ -58,8 +59,10 @@ ul li a {
 ul li a:hover {
     background: black;
     color: orange;
+    border: red;
     font-weight: bold;
-    box-shadow:  0 0 5px #fff;
+    box-shadow:  0 0 5px orange,
+                 0 0 10px orange;
 }
 
 /* Body of Webpage */
@@ -99,6 +102,7 @@ ul li a:hover {
     background:orange;
     color: black;
     font-weight: bold;
+    border: white;
     box-shadow: 0 0 10px black,
                 0 0 40px black,
                 0 0 80px black;
