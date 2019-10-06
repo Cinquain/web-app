@@ -5,11 +5,14 @@
 }
 
 body {
+    height: 100vh;
+    width: 100vw;
     background: url(/assets/Enlist\ Now.jpg);
     background-size: cover;
     background-position: center;
-    height: 100vh;
-    width: 100vw;
+    position: relative;
+    background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 #navBar {
@@ -55,12 +58,56 @@ ul li a:hover {
 
 
 .outer {
-    width: 100vw;
-    height: 90vh;
+    width: 100%;
+    height: 90%;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    display: flex;
     justify-content: center;
     align-items: center;
-    display: flex;
-    border: 2px solid red;
+    margin-top: 10%;
+}
+
+.title h1 {
+    color: white;
+    margin: 0% auto;
+}
+
+.form {
+    width: 70%;
+    height: 60%;
+    margin: 0% auto;
+}
+
+.form form input {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding-left: 20px;
+}
+
+::placeholder {
+    color: white;
+    font-size: 2.3em;
+}
+
+#check {
+    margin-top: 0;
+
+}
+
+label {
+
+    color: white;
+    font-size: 1.2em;
 }
 
 
@@ -82,6 +129,15 @@ ul li a:hover {
     .box h2 {
         font-size: 1.5em;
     }
+
+    .title {
+        padding-top: 5%;
+    }
+
+    .title h1 {
+        font-size: 4em;
+        padding-top: 20px;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -102,6 +158,19 @@ ul li a:hover {
     ul li a {
         font-size: 1.3em;
         padding: 10px 20px;
+    }
+
+    .title {
+        padding-top: 5%;
+    }
+
+    .title h1 {
+        font-size: 4em;
+        padding-top: 20px;
+    }
+
+    .form form input {
+        font-size: 1.5em;
     }
 }
 
@@ -134,5 +203,26 @@ ul li a:hover {
 
     /* Page Specific */
 
+    .title {
+        padding-top: 5%;
+        margin-top: 0%;
+    }
+
+    .title h1 {
+        font-size: 4em;
+        padding-top: 20px;
+    }
+
+    .form {
+        width: 50%;
+    }
+
+    .form form input {
+        margin: 20px 0;
+    }
+
+    ::placeholder {
+        font-size: 1em;
+    }
 
 }

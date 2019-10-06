@@ -212,9 +212,9 @@ ul li a:hover {
 
     .outer {
         display: flex;
-        position: absolute;
-        width: 100%;
+        width: 100vw;
         height: 80%;
+        position: absolute;
     }
 
     .outer a {
@@ -222,10 +222,11 @@ ul li a:hover {
     }
 
     .box {
-        height: 450px;
-        width: 450px;
+        height: 400px;
+        width: 400px;
         border-radius: 50%;
         margin-top: -160px;
+        position: relative;
     }
 
     .box p {
