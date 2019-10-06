@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Asap&display=swap');
+
+
 * {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
 }
 
 body {
@@ -74,12 +79,15 @@ ul li a:hover {
 .title h1 {
     color: white;
     margin: 0% auto;
+    letter-spacing: 3px;
+    font-weight: 1200;
 }
 
 .form {
     width: 70%;
     height: 60%;
     margin: 0% auto;
+  
 }
 
 .form form input {
@@ -88,26 +96,85 @@ ul li a:hover {
     height: 50px;
     margin: 30px 0;
     background: transparent;
+    font-weight: bold;
     color: white;
     border: 1px solid white;
     border-radius: 10px;
     padding-left: 20px;
 }
 
+form button {
+    width: 120px;
+    height: 40px;
+    background: transparent;
+    filter: opacity(0.8);
+    font-size: 1.1em;
+    border: none;
+    margin: 0% auto;
+    border-radius: 10px;
+    color: black;
+    position: relative;
+    left: 40%;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+
+form button:hover {
+    animation: animate 8s linear infinite;
+    color: white;
+    box-shadow: 0 0 10px black, 
+                    0 0 15px orange,
+                    0 0 20px black,
+                    0 0 25px orange, 
+                    0 0 30px black;
+    
+}
+
+@keyframes animate {
+    0% 
+    {
+        background-position: 0%;
+    }
+
+    100% 
+    {
+        background-position: 400%;
+    }
+}
+
+
+
+
+.checkbox {
+    display: table-cell;
+    align-items: center;
+}
+
+.checkbox label {
+    margin-left: 30px;
+    position: relative;
+    float: left;
+    font-size: 1.3em;
+}
 ::placeholder {
     color: white;
     font-size: 2.3em;
 }
 
-#check {
-    margin-top: 0;
+label {
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#os {
+    color: blue;
 
 }
 
-label {
-
-    color: white;
-    font-size: 1.2em;
+#droid {
+    color: red;
+    font-weight: bold;
 }
 
 
@@ -225,4 +292,18 @@ label {
         font-size: 1em;
     }
 
+    form button {
+        width: 200px;
+        height: 50px;
+        font-size: 18px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        text-align: center;
+        background: linear-gradient(90deg, orange, black, orange, black);
+        background-size: 400%;
+        border-radius: 20px;
+        color: black;
+    }
+
+   
 }

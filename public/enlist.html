@@ -46,14 +46,21 @@
                 
                 <div class="form">
 
-                    <form action="#" method="POST">
+                    <form action="/new_signup" method="POST">
 
                         <input type="text" id="name" name="firstName" placeholder="Full Name">
                         <input type="email" id="email" name="email" placeholder="Email">
-                        <input type="text" id="city" name="city" placeholder="City">
-                        <input type="checkbox" id="check" name="iOS" value="iOS">
-                        <label for="iOS">iOS</label> 
-                        
+                        <input type="text" id="city" name="city" placeholder="Your City">
+                        <div class="checkbox">
+                            <input type="checkbox" id="iOS" name="iOS" value="iOS">
+                            <span>
+                            <label for="iOS" id="os">iOS</label>
+                            </span>
+                            <input type="checkbox" id="Android" name="Android" value="Android">
+                            <label for="Android" id="droid">Android</label>
+                        </div>
+
+                        <button> Enlist </button>
                     </form>
     
                 </div>
