@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap');
+
 * {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
 }
 
 body {
@@ -54,9 +57,55 @@ ul li a:hover {
 .outer {
     width: 100%;
     height: 90%;
+    border: 1px solid purple;
+    text-align: center;
+    position: relative;
+    display: block;
+}
+
+.outer h1 {
+    margin: 5% 0%;
+    color: white;
+    font-size: 4em;
+    letter-spacing: 3px;
+}
+
+.row {
+    width: 100%;
+    border: 1px solid red;
+    height: 20%;
+    margin: 22px 0%;
+    text-align: center;
+    margin-bottom: 50px;
     align-items: center;
     justify-content: center;
+
 }
+
+.row2 {
+    display: none;
+}
+
+.box {
+    width: calc(80%);
+    border: 1px solid white;
+    color: white;
+    height: 100%;
+    margin: 0% auto;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.outer a {
+    color: white;
+    font-family: 'lato', sans-serif;
+    font-size: 24px;
+    border: 1px solid white;
+    padding: 20px 60px;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
 
 
 
@@ -74,7 +123,14 @@ ul li a:hover {
         font-size: 1.3em;
         padding: 10px 20px;
     }
+
 }
+
+@media (min-width: 768px) {
+
+   
+}
+
 
 
 @media (min-width: 1024px) {
@@ -96,6 +152,25 @@ ul li a:hover {
         font-size: 1.3em;
         padding: 10px 20px;
     }
+
+    .row {
+        display: flex;
+    }
+    
+    .row2 {
+        display: visible;
+    }
+
+    .box {
+        width: calc(25%);
+        border: 1px solid white;
+        color: white;
+        height: 100%;
+        margin: 0% 20px;
+        position: relative;
+    }
+
+ 
 }
 
 
@@ -123,6 +198,25 @@ ul li a:hover {
     ul li a {
         font-size: 1.3em;
         padding: 10px 20px;
+    }
+
+    .outer h1 {
+        font-size: 5em;
+    }
+
+    .row {
+        display: flex;
+        height: 30%;
+    }
+    
+    
+    .box {
+        width: calc(30%);
+        border: 1px solid white;
+        color: white;
+        height: 100%;
+        margin: 0% 20px;
+        position: relative;
     }
 }
     /* Page Specific */

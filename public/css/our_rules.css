@@ -63,7 +63,6 @@ ul li a:hover {
     height: 90vh;
     justify-content: center;
     align-items: center;
-    display: flex;
 }
 
 .content {
