@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+
 
 * {
     margin: 0%;
@@ -10,7 +12,9 @@
 body {
     height: 100vh;
     width: 100vw;
-    background: black;
+    background: url(/assets/scoutzone.jpg);
+    background-size: cover;
+    backdrop-filter: brightness(0.8);
 }
 
 #navBar {
@@ -57,7 +61,6 @@ ul li a:hover {
 .outer {
     width: 100%;
     height: 90%;
-    border: 1px solid purple;
     text-align: center;
     position: relative;
     display: block;
@@ -67,16 +70,17 @@ ul li a:hover {
     margin: 5% 0%;
     color: white;
     font-size: 4em;
-    letter-spacing: 3px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-family: 'Permanent Marker', cursive;
 }
 
 .row {
     width: 100%;
-    border: 1px solid red;
     height: 20%;
     margin: 22px 0%;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 75px;
     align-items: center;
     justify-content: center;
 
@@ -88,13 +92,64 @@ ul li a:hover {
 
 .box {
     width: calc(80%);
-    border: 1px solid white;
     color: white;
     height: 100%;
     margin: 0% auto;
     position: relative;
     margin-bottom: 25px;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.5s;
 }
+
+.box:hover p {
+    background: orange;
+    color: black;
+    font-weight: bold;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.box1 {
+    background: url(/assets/Keep\ Exploring.jpg);
+    background-size: cover;
+}
+
+.box2 {
+    background: url(/assets/Share_Information.jpg);
+    background-size: cover;
+}
+
+.box3 {
+    background: url(/assets/abandoned.jpg);
+    background-size: cover;
+}
+
+.box4 {
+    background: url(/assets/Scouts\ Who.jpg);
+    background-size: cover;
+}
+
+.box5 {
+    background: url(/assets/Walk.jpg);
+    background-size: cover;
+}
+
+.box6 {
+    background: url(/assets/Scout\ Boots.jpg);
+    background-size: cover;
+}
+
+.box p {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: 2em;
+    transition: 1s;
+    position: absolute;
+    top: -35px;
+}
+
+
+
 
 .outer a {
     color: white;
@@ -163,13 +218,21 @@ ul li a:hover {
 
     .box {
         width: calc(25%);
-        border: 1px solid white;
         color: white;
         height: 100%;
         margin: 0% 20px;
         position: relative;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: flex;
     }
 
+    .box p {
+        top: -35px;
+    }
+
+  
  
 }
 
@@ -184,7 +247,10 @@ ul li a:hover {
 
     .outer {
         height: 93vh;
+        position: relative;
     }
+
+    
 
     a img {
         width: 250px
@@ -212,11 +278,46 @@ ul li a:hover {
     
     .box {
         width: calc(30%);
-        border: 1px solid white;
         color: white;
         height: 100%;
         margin: 0% 20px;
         position: relative;
     }
+
+    .outer a {
+        padding: 10px 50px;
+        border-radius: 10px;
+        background: linear-gradient(60deg, black, orange, black, orange, black);
+        background-size: 400%;
+        border: none;
+        position: absolute;
+        margin: auto;
+        bottom: 90px;
+    }
+
+    .outer a:hover {
+        animation: 8s animate infinite;
+    }
+
+    @keyframes animate {
+        0%
+        {
+            background-position: 0%;
+        }
+
+        100%
+        {
+            background-position: 400%;
+        }
+    }
+
+    @media (min-width: 1500px) {
+
+        .outer h1 {
+            margin-top: 3%;
+            margin-bottom: 0%;
+        }
+    
+    {
 }
     /* Page Specific */
