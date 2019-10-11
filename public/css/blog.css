@@ -12,9 +12,10 @@
 body {
     height: 100vh;
     width: 100vw;
-    background: url(/assets/scoutzone.jpg);
+    background: black;
     background-size: cover;
     backdrop-filter: brightness(0.8);
+    overflow: hidden;
 }
 
 #navBar {
@@ -59,11 +60,10 @@ ul li a:hover {
 }
 
 .outer {
-    width: 100%;
+    width: 100vw;
     height: 90%;
     text-align: center;
     position: relative;
-    display: block;
 }
 
 .outer h1 {
@@ -77,36 +77,42 @@ ul li a:hover {
 
 .row {
     width: 100%;
-    height: 20%;
-    margin: 22px 0%;
+    height: 30%;
+    margin: 150px 0;
     text-align: center;
-    margin-bottom: 75px;
+    display: flex;
+    position: relative;
     align-items: center;
     justify-content: center;
-
 }
 
-.row2 {
-    display: none;
-}
 
 .box {
-    width: calc(80%);
+    width: 50%;
     color: white;
     height: 100%;
-    margin: 0% auto;
     position: relative;
-    margin-bottom: 25px;
     background-position: center;
     cursor: pointer;
     transition: 0.5s;
 }
+
+.box p {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: 2em;
+    transition: 1s;
+    top: -10%;
+    position: absolute;
+}
+
 
 .box:hover p {
     background: orange;
     color: black;
     font-weight: bold;
     font-family: 'Permanent Marker', cursive;
+    top: 0%;
 }
 
 .box1 {
@@ -125,40 +131,32 @@ ul li a:hover {
 }
 
 .box4 {
-    background: url(/assets/Scouts\ Who.jpg);
-    background-size: cover;
-}
-
-.box5 {
     background: url(/assets/Walk.jpg);
     background-size: cover;
 }
 
-.box6 {
-    background: url(/assets/Scout\ Boots.jpg);
-    background-size: cover;
-}
-
-.box p {
-    font-family: 'Lato', sans-serif;
-    color: white;
-    font-size: 2em;
-    transition: 1s;
-    position: absolute;
-    top: -35px;
-}
-
-
-
 
 .outer a {
-    color: white;
-    font-family: 'lato', sans-serif;
-    font-size: 24px;
-    border: 1px solid white;
-    padding: 20px 60px;
+    padding: 10px 50px;
+    border-radius: 10px;
+    border: 1px solid orange;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin: auto;
+    bottom: 0%;
     text-decoration: none;
-    border-radius: 20px;
+    color: white;
+}
+
+.outer a:hover {
+    box-shadow: 0 0 10px black, 
+                0 0 20px orange, 
+                0 0 40px black;
+}
+
+footer {
+    background: black;
 }
 
 
@@ -183,7 +181,24 @@ ul li a:hover {
 
 @media (min-width: 768px) {
 
-   
+    .outer h1 {
+        margin-bottom: 5%;
+    }
+
+    body {
+        background: url(/assets/scoutzone.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .row {
+        margin-bottom: 5%;
+    }
+
+    .outer a {
+        bottom: -2%;
+    }
 }
 
 
@@ -195,7 +210,7 @@ ul li a:hover {
     }
 
     a img {
-        width: 250px
+        width: 250px;
     }
 
     ul {
@@ -210,26 +225,23 @@ ul li a:hover {
 
     .row {
         display: flex;
+        margin: 50px 0;
     }
     
-    .row2 {
-        display: visible;
-    }
-
     .box {
-        width: calc(25%);
+        width: calc(40%);
+        max-width: 700px;
         color: white;
         height: 100%;
-        margin: 0% 20px;
+        margin: 10px 20px;
         position: relative;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        display: flex;
     }
-
     .box p {
         top: -35px;
+    }
+
+    .outer a {
+        bottom: 0%;
     }
 
   
@@ -277,39 +289,21 @@ ul li a:hover {
     
     
     .box {
-        width: calc(30%);
+        width: calc(40%);
+        max-width: 700px;
         color: white;
         height: 100%;
-        margin: 0% 20px;
+        margin: 10px 20px;
         position: relative;
     }
 
     .outer a {
         padding: 10px 50px;
-        border-radius: 10px;
-        background: linear-gradient(60deg, black, orange, black, orange, black);
-        background-size: 400%;
-        border: none;
-        position: absolute;
-        margin: auto;
-        bottom: 90px;
+        bottom: 10%;
     }
 
-    .outer a:hover {
-        animation: 8s animate infinite;
-    }
+   
 
-    @keyframes animate {
-        0%
-        {
-            background-position: 0%;
-        }
-
-        100%
-        {
-            background-position: 400%;
-        }
-    }
 
     @media (min-width: 1500px) {
 
