@@ -1,14 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap');
+
 * {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    color: white;
+    font-family: 'Lato', sans-serif;
 }
 
 
 body {
-    height: 100vh;
+    height: 150vh;
     width: 100vw;
-    background:black;
+    background: url(/assets/New\ York\ City.png);
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: brightness(0.1);
 }
 
 #navBar {
@@ -57,8 +64,30 @@ ul li a:hover {
     height: 90%;
     text-align: center;
     position: relative;
-    border: 1px solid red;
 }
+
+.outer h1 {
+   margin-bottom: 5%;
+   font-family: 'Times New Roman', Times, serif;
+}
+
+#paragraph {
+    width: 60%;
+    height: auto;
+    margin: auto;
+    text-align: left;
+}
+
+
+#paragraph p {
+    font-size: 1.5em;
+}
+
+/* img {
+    width: 25%;
+    height: 500px;
+    margin: auto;
+} */
 
 
 
@@ -75,6 +104,11 @@ ul li a:hover {
     ul li a {
         font-size: 1.3em;
         padding: 10px 20px;
+    }
+
+    .outer h1 {
+        font-size: 2.5em;
+        margin-top: 20px;
     }
 
 }
@@ -100,6 +134,11 @@ ul li a:hover {
         font-size: 1.3em;
         padding: 10px 20px;
     }
+
+    
+    .outer h1 {
+        font-size: 3em;
+    }
 }
 
 
@@ -116,9 +155,7 @@ ul li a:hover {
     .outer {
         height: 93vh;
         position: relative;
-    }
-
-    
+    }    
 
     a img {
         width: 250px
@@ -132,5 +169,9 @@ ul li a:hover {
     ul li a {
         font-size: 1.3em;
         padding: 10px 20px;
+    }
+
+    .outer h1 {
+        font-size: 3.5em;
     }
 }
