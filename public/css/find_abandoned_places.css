@@ -10,12 +10,12 @@
 
 
 body {
-    height: 150vh;
+    height: 170vh;
     width: 100vw;
     background: url(/assets/New\ York\ City.png);
     background-size: cover;
     background-position: center;
-    backdrop-filter: brightness(0.1);
+    backdrop-filter: brightness(0.13);
 }
 
 #navBar {
@@ -71,6 +71,19 @@ ul li a:hover {
    font-family: 'Times New Roman', Times, serif;
 }
 
+#tagline {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#tagline img {
+    width: 50%;
+    height: auto;
+}
+
 #paragraph {
     width: 60%;
     height: auto;
@@ -83,6 +96,11 @@ ul li a:hover {
     font-size: 1.5em;
 }
 
+
+#tagline img {
+    width: 50%;
+    height: auto;
+}
 /* img {
     width: 25%;
     height: 500px;
@@ -138,6 +156,19 @@ ul li a:hover {
     
     .outer h1 {
         font-size: 3em;
+    }
+
+    #tagline img {
+       height: 400px;
+       width: 400px;
+    }
+
+    #tagline a {
+        text-decoration: none;
+    }
+
+    #tagline h2 {
+        font-size: 34px;
     }
 }
 
