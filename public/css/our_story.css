@@ -88,9 +88,10 @@ h1
 
 }
 
+
 h1 span 
 {
-    animation: animate 2s linear infinite;
+    animation: animate 2s linear;
 }
 
 h1 span:nth-child(1)
@@ -137,6 +138,24 @@ h1 span:nth-child(9)
 {
     animation-delay: 2s;
 }
+
+h1 span:nth-child(5) {
+    animation: xAnimate 8s linear infinite;
+    animation-delay: 4.1s;
+}
+
+@keyframes xAnimate {
+    0% 
+    {
+        color: orange;
+    }
+
+    100% 
+    {
+        color: orange;
+    }
+}
+
 
 @keyframes animate
 {

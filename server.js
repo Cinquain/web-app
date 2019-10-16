@@ -1,9 +1,10 @@
 const express = require('express')
 const app = express()
 const morgan = require('morgan')
+const mysql = require('mysql')
 const bodyParser = require('body-parser')
 
-const Port = 3008
+const Port = process.env.Port || 3008
 
 app.use(morgan('short'));
 app.use(bodyParser.urlencoded({extended: false}))
@@ -13,6 +14,11 @@ app.listen(Port, () => {
     console.log('Server is up and running on port ' + Port)
 })
 
+const connection = mysql.createConnection({
+    host: 'localhost',
+    user: 'root',
+    database:'user_signup'
+})
 
 app.get('/', (req, res) => {
     res.render('index.html')
@@ -26,10 +32,17 @@ app.post('/new_signup', (req, res, err) => {
 
     console.log(name, email, city);
 
-    if (err) {
-        console.log('Error creating new user signup', err)
-    }
+    const queryString = "INSERT INTO users (name, email, city, device) VALUES (?, ?, ?, ?)"
 
-    res.redirect('http://google.com');
-    res.end()
+    connection.query(queryString, [name, email, city], (error, results, fields) => {
+        if (error) {
+            console.log("Failed to insert new user into mysql database" + error)
+            res.sendStatus(500)
+            return
+        }
+
+        console.log("Successfully inserted new user" + results.insertID)
+        res.redirect('http://google.com');
+        res.end()
+    })
 })
