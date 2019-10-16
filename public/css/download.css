@@ -4,22 +4,21 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    color: white;
     font-family: 'Lato', sans-serif;
 }
 
-
 body {
-    height: 170vh;
+    height: 100vh;
     width: 100vw;
-    background: url(/assets/New\ York\ City.png);
+    background: url(/assets/download-2.png);
+    backdrop-filter: brightness(0.5);
     background-size: cover;
     background-position: center;
-    backdrop-filter: brightness(0.13);
+    overflow: hidden;
 }
 
 #navBar {
-    height: 50px;
+    height: 40px;
     width: 100%;
 }
 
@@ -55,56 +54,53 @@ ul li a:hover {
     background: orange;
     color:black;
     font-weight: bold;
-    border: red;
     box-shadow:  0 0 5px #fff;
 }
 
 .outer {
-    width: 100vw;
-    height: 90%;
-    text-align: center;
-    position: relative;
-}
-
-.outer h1 {
-   margin-bottom: 5%;
-}
-
-#tagline {
+    height: 92vh;
     width: 100%;
-    height: auto;
     justify-content: center;
     align-items: center;
     display: flex;
 }
 
-#tagline img {
-    width: 50%;
-    height: auto;
+#main {
+    margin-top: -30px;
+    color: white;
+    width: 100%;
+    height: 35%;
+    text-align: center;
+    letter-spacing: 2px;
 }
 
-#paragraph {
-    width: 60%;
-    height: auto;
-    margin: auto;
-    text-align: left;
+#main h1 {
+    font-size: 2.5em;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
 }
 
-
-#paragraph p {
-    font-size: 1.5em;
+#main a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
 }
 
-
-#tagline img {
-    width: 50%;
-    height: auto;
+#main a:hover {
+    background: orange;
+    border: none;
+    color: black;
+    font-weight: bold;
+    box-shadow:  0 0 10px black,
+                 0 0 40px orange,
+                 0 0 80px black;
 }
-/* img {
-    width: 25%;
-    height: 500px;
-    margin: auto;
-} */
+
 
 
 
@@ -122,14 +118,7 @@ ul li a:hover {
         font-size: 1.3em;
         padding: 10px 20px;
     }
-
-    .outer h1 {
-        font-size: 2.5em;
-        margin-top: 20px;
-    }
-
 }
-
 
 
 @media (min-width: 1024px) {
@@ -137,55 +126,6 @@ ul li a:hover {
     #navBar {
         height: 90px;
     }
-
-    a img {
-        width: 250px;
-    }
-
-    ul {
-        margin-top: 20px;
-        margin-right: 20px; 
-    }
-
-    ul li a {
-        font-size: 1.3em;
-        padding: 10px 20px;
-    }
-
-    
-    .outer h1 {
-        font-size: 3em;
-    }
-
-    #tagline img {
-       height: 400px;
-       width: 400px;
-    }
-
-    #tagline a {
-        text-decoration: none;
-    }
-
-    #tagline h2 {
-        font-size: 34px;
-    }
-}
-
-
-
-
-@media (min-width: 1200px) {
-   
-    /* Header bar CSS */
-
-    #navBar {
-        height: 90px;
-    }
-
-    .outer {
-        height: 93vh;
-        position: relative;
-    }    
 
     a img {
         width: 250px
@@ -201,7 +141,12 @@ ul li a:hover {
         padding: 10px 20px;
     }
 
-    .outer h1 {
-        font-size: 3.5em;
+    #main h1 {
+        font-size: 4em;
+        letter-spacing: 4px;
+    }
+    
+    #main a {
+        padding: 15px 50px;
     }
 }
