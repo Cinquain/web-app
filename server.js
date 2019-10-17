@@ -26,15 +26,25 @@ app.get('/', (req, res) => {
 
 app.post('/new_signup', (req, res, err) => {
 
+    var device = null
+
+    if (req.body.iOS) {
+        console.log('user has iOS')
+        device = 'iOS'
+    } else if (req.body.Android) {
+        console.log('user has Android')
+        device = 'Android'
+    }
+
     var name = req.body.fullName 
     var email = req.body.email
     var city = req.body.city
-
-    console.log(name, email, city);
+    
+    console.log(name, email, city, device);
 
     const queryString = "INSERT INTO users (name, email, city, device) VALUES (?, ?, ?, ?)"
 
-    connection.query(queryString, [name, email, city], (error, results, fields) => {
+    connection.query(queryString, [name, email, city, device], (error, results, fields) => {
         if (error) {
             console.log("Failed to insert new user into mysql database" + error)
             res.sendStatus(500)
