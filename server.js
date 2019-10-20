@@ -21,10 +21,6 @@ const pool = mysql.createConnection({
     database:'heroku_9ac93b6b6935406'
 })
 
-function connection() {
-    return pool
-}
-
 app.get('/', (req, res) => {
     res.render('index.html')
 })
@@ -49,7 +45,7 @@ app.post('/new_signup', (req, res, err) => {
 
     const queryString = "INSERT INTO users (name, email, city, device) VALUES (?, ?, ?, ?)"
 
-    connection.query(queryString, [name, email, city, device], (error, results, fields) => {
+    pool.query(queryString, [name, email, city, device], (error, results, fields) => {
         if (error) {
             console.log("Failed to insert new user into mysql database" + error)
             res.sendStatus(500)
