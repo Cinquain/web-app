@@ -13,7 +13,7 @@ body {
     background: black;
     position: relative;
     height: 100vh;
-    background: url(/assets/Product\ Shot.jpg);
+    background: url(/assets/download-2.png);
     background-position: center;
     background-size: cover;
     overflow: hidden;
@@ -93,9 +93,10 @@ ul li a:hover {
 
 #main a {
     text-decoration: none;
-    color: white;
-    border: 0.5px solid white;
-    background: black;
+    color: black;
+    background: orange;
+    border: 0.4px solid white;
+    font-family: 'Times New Roman', Times, sans-serif;
     border-radius: 5px;
     padding: 10px 20px;
     text-transform: uppercase;
