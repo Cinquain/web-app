@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({extended: false}))
 app.use(express.static('public'))
 
 app.listen(PORT, () => {
-    console.log('Server is up and running on: ')
+    console.log('Server is up and running on 3008')
 })
 
 const pool = mysql.createConnection({

@@ -49,7 +49,7 @@ ul li {
 ul li a {
     color: white;
     text-decoration: none;
-    font-size: 0.8em;
+    font-size: 1em;
     padding: 2px 5px;
     transition: all 0.3s ease;
 }
@@ -58,7 +58,9 @@ ul li a:hover {
     background: orange;
     color:black;
     font-weight: bold;
-    box-shadow:  0 0 5px #fff;
+    box-shadow:  0 0 10px orange,
+                 0 0 20px black,
+                 0 0 40px orange;
 }
 
 /* Body of Webpage */
@@ -91,10 +93,11 @@ ul li a:hover {
 
 #main a {
     text-decoration: none;
-    color: white;
+    color: black;
+    background: orange;
     padding: 10px 20px;
-    border: 1px solid white;
     text-transform: uppercase;
+    font-weight: bold;
     overflow: hidden;
     transition: all 0.5s ease-in-out;
 }
@@ -104,9 +107,9 @@ ul li a:hover {
     border: none;
     color: black;
     font-weight: bold;
-    box-shadow:  0 0 10px #000,
-                 0 0 40px #000,
-                 0 0 80px #000;
+    box-shadow:  0 0 10px orange,
+                 0 0 40px black,
+                 0 0 80px orange;
 }
 
 /* Media Queries for responsiveness */
