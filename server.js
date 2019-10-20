@@ -14,11 +14,16 @@ app.listen(PORT, () => {
     console.log('Server is up and running on: ')
 })
 
-const connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    database:'user_signup'
+const pool = mysql.createConnection({
+    host: 'us-cdbr-iron-east-05.cleardb.net',
+    user: 'b9bc95ae944364',
+    password: '63d9d15b',
+    database:'heroku_9ac93b6b6935406'
 })
+
+function connection() {
+    return pool
+}
 
 app.get('/', (req, res) => {
     res.render('index.html')
@@ -52,7 +57,7 @@ app.post('/new_signup', (req, res, err) => {
         }
 
         console.log("Successfully inserted new user" + results.insertID)
-        res.redirect('http://google.com');
+        res.redirect('index.html');
         res.end()
     })
 })
