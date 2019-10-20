@@ -4,14 +4,14 @@ const morgan = require('morgan')
 const mysql = require('mysql')
 const bodyParser = require('body-parser')
 
-const PORT = process.env.Port || 3008
+const Port = process.env.Port 3008
 
 app.use(morgan('short'));
 app.use(bodyParser.urlencoded({extended: false}))
 app.use(express.static('public'))
 
-app.listen(PORT, () => {
-    console.log('Server is up and running on: ' + Port)
+app.listen(Port, () => {
+    console.log('Server is up and running on: ')
 })
 
 const connection = mysql.createConnection({
