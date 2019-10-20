@@ -54,7 +54,8 @@ ul li a:hover {
     background: orange;
     color:black;
     font-weight: bold;
-    box-shadow:  0 0 5px #fff;
+    box-shadow:  0 0 10px black,
+                 0 0 40px orange,
 }
 
 .outer {
