@@ -4,13 +4,13 @@ const morgan = require('morgan')
 const mysql = require('mysql')
 const bodyParser = require('body-parser')
 
-const Port = process.env.Port || 3008
+const PORT = process.env.Port || 3008
 
 app.use(morgan('short'));
 app.use(bodyParser.urlencoded({extended: false}))
 app.use(express.static('public'))
 
-app.listen(Port, () => {
+app.listen(PORT, () => {
     console.log('Server is up and running on: ')
 })
 
