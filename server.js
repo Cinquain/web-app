@@ -4,7 +4,7 @@ const morgan = require('morgan')
 const mysql = require('mysql')
 const bodyParser = require('body-parser')
 
-const Port = process.env.Port 3008
+const Port = process.env.Port || 3008
 
 app.use(morgan('short'));
 app.use(bodyParser.urlencoded({extended: false}))
