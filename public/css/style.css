@@ -44,12 +44,15 @@ ul {
 ul li {
     display: inline;
     margin: 4px;
+    align-items: center;
+    justify-content: center;
 }
 
 ul li a {
-    color: white;
+    color: orange;
+    background: black;
+    border-radius: 10px;
     text-decoration: none;
-    font-size: 1em;
     padding: 2px 5px;
     transition: all 0.3s ease;
 }
@@ -96,7 +99,6 @@ ul li a:hover {
     text-decoration: none;
     color: black;
     background: orange;
-    border: 0.4px solid white;
     font-family: 'Times New Roman', Times, sans-serif;
     border-radius: 5px;
     padding: 10px 20px;
