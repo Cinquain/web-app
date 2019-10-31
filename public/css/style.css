@@ -49,8 +49,8 @@ ul li {
 }
 
 ul li a {
-    color: orange;
-    background: black;
+    color: black;
+    background: rgba(255,255, 255, 0.5);
     border-radius: 10px;
     text-decoration: none;
     padding: 2px 5px;
