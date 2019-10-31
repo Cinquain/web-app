@@ -53,6 +53,9 @@ app.post('/new_signup', (req, res, err) => {
         }
 
         console.log("Successfully inserted new user" )
+
+
+
         res.redirect('index.html');
         res.end()
     })
