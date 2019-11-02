@@ -3,6 +3,7 @@ const app = express()
 const morgan = require('morgan')
 const mysql = require('mysql')
 const bodyParser = require('body-parser')
+const request = require('superagent')
 
 const PORT = process.env.PORT || 3008
 
@@ -25,6 +26,7 @@ app.get('/', (req, res) => {
     res.render('index.html')
 })
 
+
 app.post('/new_signup', (req, res, err) => {
 
     var device = null
@@ -42,6 +44,8 @@ app.post('/new_signup', (req, res, err) => {
     var city = req.body.city
     
     console.log(name, email, city, device);
+    saveToMailChimp(name, email, city, device);
+
 
     const queryString = "INSERT INTO users (name, email, city, device) VALUES (?, ?, ?, ?)"
 
@@ -54,9 +58,47 @@ app.post('/new_signup', (req, res, err) => {
 
         console.log("Successfully inserted new user" )
 
-
-
         res.redirect('index.html');
         res.end()
-    })
+    })    
 })
+
+
+function saveToMailChimp(name, email, city, device) {
+
+    var request = require('request');
+
+    const data = {
+        members: [
+            {
+                email_address: email,
+                status: 'subscribed',
+                merge_fields: {
+                    FNAME: name, 
+                    TEXTYUI_3: city, 
+                    CHECKBOXY: device
+                }
+            }
+        ]
+    }
+
+    const postData = JSON.stringify(data)
+
+    const options = { 
+    url: 'https://us7.api.mailchimp.com/3.0/lists/cc06da0dc6',
+    method: 'POST',
+    headers: { 
+        Authorization: 'auth 2d49af1f4e73a69ab208d07a27b5c768-us7'
+    },
+    body: postData 
+    };
+
+    request(options, function (error, response, body) {
+    if (error) {
+        console.log('Error saving to mailchimp')
+    } else if (response.statusCode === 200) {
+        console.log('Saved to mailchimp');
+    }
+    });
+}
+
