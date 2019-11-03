@@ -46,9 +46,12 @@ ul li {
 }
 
 ul li a {
-    color: white;
+    color: black;
+    background: rgba(255,255, 255, 0.5);
+    border-radius: 10px;
     text-decoration: none;
-    font-size: 0.8em;
+    font-size: 1.3em;
+    font-weight: 900;
     padding: 2px 5px;
     transition: all 0.3s ease;
 }
@@ -57,10 +60,10 @@ ul li a:hover {
     background: orange;
     color:black;
     font-weight: bold;
-    border: red;
-    box-shadow:  0 0 5px #fff;
+    box-shadow:  0 0 10px orange,
+                 0 0 20px black,
+                 0 0 40px orange;
 }
-
 
 .outer {
     width: 100%;

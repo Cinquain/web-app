@@ -48,21 +48,25 @@ ul li {
     margin: 4px;
 }
 
+
 ul li a {
-    color: white;
+    color:white;
+    background: rgba(0,0, 0, 0.5);
+    border-radius: 10px;
     text-decoration: none;
-    font-size: 0.8em;
+    font-size: 1.3em;
+    font-weight: 900;
     padding: 2px 5px;
     transition: all 0.3s ease;
 }
 
 ul li a:hover {
-    background: black;
-    color: orange;
-    border: red;
+    background: orange;
+    color:black;
     font-weight: bold;
-    box-shadow:  0 0 5px orange,
-                 0 0 10px orange;
+    box-shadow:  0 0 10px orange,
+                 0 0 20px black,
+                 0 0 40px orange;
 }
 
 /* Body of Webpage */
