@@ -26,7 +26,7 @@ body {
 a img {
     padding-top: 10px;
     padding-left: 10px;
-    width: 120px;
+    width: 150px;
     height: auto;
     float: left;
 }
@@ -46,7 +46,7 @@ ul li {
 ul li a {
     color: white;
     text-decoration: none;
-    font-size: 0.8em;
+    font-size: 1.3em;
     padding: 2px 5px;
     transition: all 0.3s ease;
 }

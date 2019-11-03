@@ -24,7 +24,7 @@ body {
 a img {
     padding-top: 12px;
     padding-left: 10px;
-    width: 120px;
+    width: 150px;
     height: auto;
     float: left;
 }
@@ -44,7 +44,7 @@ ul li {
 ul li a {
     color: white;
     text-decoration: none;
-    font-size: 0.8em;
+    font-size: 1.2em;
     padding: 2px 5px;
     transition: all 0.3s ease;
 }
@@ -173,6 +173,17 @@ h1 span:nth-child(5) {
                      0 0 40px #fff, 
                      0 0 70px #fff, 
                      0 0 120px #fff, 
+    }
+}
+
+@media (min-width: 315px) {
+
+    h1 {
+        font-size: 3.0em;
+    }
+
+    p {
+        font-size: 1.4em;
     }
 }
 
