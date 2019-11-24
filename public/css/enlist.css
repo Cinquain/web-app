@@ -104,6 +104,7 @@ input {
     background: transparent;
     color: white;
     font-weight: 900;
+    font-size: 1.3em;
 }
 
 
@@ -126,11 +127,13 @@ input {
 
 button {
     height: 100%;
-    width: 30%;
+    width: 40%;
     border-radius: 10px;
     color: orange;
     background: rgba(0,0, 0, 0.5);
     border: 0.5px solid black;
+    font-weight: 900;
+    font-size: 1.1em;
 }
 
 
