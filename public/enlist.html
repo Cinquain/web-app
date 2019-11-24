@@ -42,55 +42,50 @@
 
 
         <body>
-
             <div id="navBar">
-                <a href="index.html"> 
+                <a id= "logo" href="index.html">
                     <img src="/assets/logo.png">
                 </a>
-    
-                <ul>
-                    <li>
-                        <a href="our_story.html">
-                            Our Story
-                        </a>
-                    </li>
-                    <li>
-                        <a href="blog.html">
-                            Blog
-                        </a>
-                    </li>
-                </ul>
-            </div>    
+            
 
-            <div class="outer">
-                    <div class="title">
-                    <h1>
-                        Become a Scout
-                    </h1>
-                    </div>
-                
-                <div class="form">
-
-                    <form action="/new_signup" method="POST">
-
-                        <input type="text" id="name" name="fullName" placeholder="Full Name">
-                        <input type="email" id="email" name="email" placeholder="Email">
-                        <input type="text" id="city" name="city" placeholder="Your City">
-                        <div class="checkbox">
-                            <input type="checkbox" id="iOS" name="iOS" >
-                            <span>
-                            <label for="iOS" id="os">iOS</label>
-                            </span>
-                            <input type="checkbox" id="Android" name="Android" value="Android">
-                            <label for="Android" id="droid">Android</label>
-                        </div>
-
-                        <button> Enlist </button>
-                    </form>
-    
-                </div>
-                
+                <nav id="menu">
+                    <ul>
+                        <li> <a href="our_story.html">Our Story </a></li>
+                        <li><a href="blog.html"> Blog </a></li>
+                    </ul>
+                </nav>
             </div>
 
+            <div id="content">
+
+                <div id="title">
+                    <h1>Enlist as a Scout</h1>
+                </div>
+                
+                <form action="/new_signup" method="POST">
+
+                    <div class="field">
+                        <input type="text" id="name" name="fullName" placeholder="Full Name">
+                    </div>
+
+                    <div class="field">
+                        <input type="email" id="email" name="email" placeholder="Email">
+                    </div>
+
+                    <div class="field">
+                        <input type="text" id="city" name="city" placeholder="Your City">
+                    </div>
+
+                    <div class="field">
+                            <input type="text" id="device" name="deviceType" placeholder="Device Type">
+                    </div>
+
+                    <div class="field">
+                        <button> Enlist </button>
+                    </div>
+
+                </form>
+
+            </div>
         </body>
     </html>

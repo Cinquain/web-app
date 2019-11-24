@@ -29,19 +29,10 @@ app.get('/', (req, res) => {
 
 app.post('/new_signup', (req, res, err) => {
 
-    var device = null
-
-    if (req.body.iOS) {
-        console.log('user has iOS')
-        device = 'iOS'
-    } else if (req.body.Android) {
-        console.log('user has Android')
-        device = 'Android'
-    }
-
     var name = req.body.fullName 
     var email = req.body.email
     var city = req.body.city
+    var device = req.body.deviceType
     
     console.log(name, email, city, device);
     saveToMailChimp(name, email, city, device);
