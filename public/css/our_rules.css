@@ -28,6 +28,7 @@ a img {
     width: 120px;
     height: auto;
     float: left;
+    background-size: cover;
 }
 
 ul {
