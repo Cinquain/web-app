@@ -16,6 +16,7 @@ body {
                 rgba(0,0, 0, 0.4);
     background-size: cover;
     background-blend-mode: saturation;
+    overflow: hidden;
 }
 
 #navBar  {
@@ -167,6 +168,27 @@ button {
 
     a img {
         width: 250px
+    }
+
+    .field {
+        width: 50%;
+        height: 60px;
+    }
+
+    button {
+        height: 80%;
+        max-width: 160px;
+        transition: 0.25s ease-out;
+    }
+
+    button:hover {
+        background: orange;
+        color:black;
+        font-weight: 900;
+        border: none;
+        box-shadow:  0 0 10px orange,
+                     0 0 20px black,
+                     0 0 40px orange;
     }
 
     #menu ul li a {
