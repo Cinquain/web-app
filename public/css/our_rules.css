@@ -43,7 +43,7 @@ ul li {
 }
 
 ul li a {
-    color: black;
+    color: white;
     background: rgba(255,255, 255, 0.2);
     border-radius: 10px;
     text-decoration: none;

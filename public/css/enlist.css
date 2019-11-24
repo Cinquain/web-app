@@ -18,11 +18,9 @@ body {
 #navBar  {
     width: 100vw;
     height: 10vh;
-    border: 1px solid yellow;
     align-items: center;
     justify-content: space-between;
     display: flex;
-    
 }
 
 #logo {
@@ -69,7 +67,6 @@ a img {
 #content {
     width: 100vw;
     height: 90vh;
-    border: 1px solid white;
     align-items: center;
     justify-content: center;
 }
@@ -115,8 +112,9 @@ button {
 
 @media (min-width: 768px) {
     
-     a img {
-       width: 200px;
+     #menu a img {
+       width: 150px;
+       height: auto;
     }
 
     #menu ul li a {
