@@ -1,32 +1,28 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:300&display=swap');
 
 
-* {
+*,*::before, *::after {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
 }
 
 body {
-    height: 100vh;
-    width: 100vw;
-    background: black;
-    background-size: cover;
-    backdrop-filter: brightness(0.8);
-    overflow: hidden;
+    background: #0f0f0f;
+    font-family: 'Lato', sans-serif;
+    color: #505050;
+    margin: 24px;
 }
 
 #navBar {
-    height: 50px;
+    height: 10vh;
     width: 100%;
 }
 
 a img {
-    padding-top: 10px;
+    padding-top: 12px;
     padding-left: 10px;
-    width: 120px;
+    width: 150px;
     height: auto;
     float: left;
 }
@@ -44,9 +40,12 @@ ul li {
 }
 
 ul li a {
-    color: white;
+    color: black;
+    background: rgba(255,255, 255, 0.5);
+    border-radius: 10px;
     text-decoration: none;
-    font-size: 0.8em;
+    font-size: 1.2em;
+    font-weight: 900;
     padding: 2px 5px;
     transition: all 0.3s ease;
 }
@@ -55,263 +54,124 @@ ul li a:hover {
     background: orange;
     color:black;
     font-weight: bold;
-    border: red;
-    box-shadow:  0 0 5px #fff;
+    box-shadow:  0 0 10px orange,
+                 0 0 20px black,
+                 0 0 40px orange;
 }
+/* Custom CSS for Webpage */
 
-.outer {
-    width: 100vw;
-    height: 90%;
-    text-align: center;
-    position: relative;
-}
 
-.outer h1 {
-    margin: 5% 0%;
-    color: white;
-    font-size: 4em;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    font-family: 'Permanent Marker', cursive;
-}
-
-.row {
+.wall {
     width: 100%;
-    height: 30%;
-    margin: 150px 0;
+    margin-top: 20%;
+}
+
+p {
     text-align: center;
-    display: flex;
-    position: relative;
-    align-items: center;
-    justify-content: center;
+    color: gray;
+    font-weight: 300;
+    margin-top: 10px;
 }
 
-
-.box {
-    width: 50%;
-    color: white;
-    height: 100%;
-    position: relative;
-    background-position: center;
+.wall-item {
+    display: block;
+    margin: 0 0 24px 0;
+    padding: 12px;
+    background: #1e1e1e;
+    transition: all 200ms;
     cursor: pointer;
-    transition: 0.5s;
 }
 
-.box p {
+.wall-item:hover {
+    transform: translateY(-8px);
+    transition: all 200ms;
+}
+
+.wall-item > img {
+    display: block;
+    width: 100%;
+    margin: 0 0 30px 0;
+}
+
+.wall-item h2 {
+    text-align: center;
+    color: white;
     font-family: 'Lato', sans-serif;
-    color: white;
-    font-size: 2em;
-    transition: 1s;
-    top: -10%;
-    position: absolute;
+    font-size: 1.2em;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 
-.box:hover p {
-    background: orange;
-    color: black;
-    font-weight: bold;
-    font-family: 'Permanent Marker', cursive;
-    top: 0%;
-}
-
-.box1 {
-    background: url(/assets/Keep\ Exploring.jpg);
-    background-size: cover;
-}
-
-.box2 {
-    background: url(/assets/Share_Information.jpg);
-    background-size: cover;
-}
-
-.box3 {
-    background: url(/assets/abandoned.jpg);
-    background-size: cover;
-}
-
-.box4 {
-    background: url(/assets/Walk.jpg);
-    background-size: cover;
-}
-
-
-.outer a {
-    padding: 10px 50px;
-    border-radius: 10px;
-    border: 1px solid orange;
+.wall-column {
+    display: block;
     position: relative;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    margin: auto;
-    bottom: 0%;
-    text-decoration: none;
-    color: white;
-}
-
-.outer a:hover {
-    box-shadow: 0 0 10px black, 
-                0 0 20px orange, 
-                0 0 40px black;
-}
-
-footer {
-    background: black;
+    width: 33.3333%;
+    float: left;
+    padding: 0 12px;
+    box-sizing: border-box;
 }
 
 
+@media (max-width: 640px) {
 
-
-@media (min-width: 735px) {
-    a img {
-        width: 200px
+    .wall-column {
+        width: 50%;
     }
-
-    ul {
-        margin-top: 20px;
-        margin-right: 20px; 
-    }
-
-    ul li a {
-        font-size: 1.3em;
-        padding: 10px 20px;
-    }
-
 }
+
+@media (max-width: 480px) {
+
+    .wall-column {
+        width: auto;
+        float: none;
+    }
+}
+
 
 @media (min-width: 768px) {
 
-    .outer h1 {
-        margin-bottom: 5%;
+    a img {
+        width: 200px;
     }
 
-    body {
-        background: url(/assets/scoutzone.jpg);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
+    ul {
+        margin-top: 20px;
+        margin-right: 20px;
     }
 
-    .row {
-        margin-bottom: 5%;
+    ul li a {
+        font-size: 1.3em;
+        padding: 10px 20px;
     }
 
-    .outer a {
-        bottom: -2%;
+    .wall-item h2 {
+        font-size: 1.5em;
     }
 }
-
-
 
 @media (min-width: 1024px) {
 
-    #navBar {
-        height: 90px;
-    }
-
-    a img {
-        width: 250px;
-    }
-
-    ul {
-        margin-top: 20px;
-        margin-right: 20px; 
-    }
-
-    ul li a {
-        font-size: 1.3em;
-        padding: 10px 20px;
-    }
-
-    .row {
-        display: flex;
-        margin: 50px 0;
-    }
-    
-    .box {
-        width: calc(40%);
-        max-width: 700px;
-        color: white;
-        height: 100%;
-        margin: 10px 20px;
-        position: relative;
-    }
-    .box p {
-        top: -35px;
-    }
-
-    .outer a {
-        bottom: 0%;
-    }
-
-  
- 
-}
-
-
-@media (min-width: 1200px) {
-   
-    /* Header bar CSS */
-
-    #navBar {
-        height: 90px;
-    }
-
-    .outer {
-        height: 93vh;
-        position: relative;
-    }
-
-    
-
-    a img {
+    .a img {
         width: 250px
     }
 
-    ul {
-        margin-top: 20px;
-        margin-right: 20px; 
+    .wall {
+        margin-top: 15%;
     }
 
-    ul li a {
-        font-size: 1.3em;
-        padding: 10px 20px;
+    .wall-item h2 {
+        font-size: 1.8em;
     }
-
-    .outer h1 {
-        font-size: 5em;
-    }
-
-    .row {
-        display: flex;
-        height: 30%;
-    }
-    
-    
-    .box {
-        width: calc(40%);
-        max-width: 700px;
-        color: white;
-        height: 100%;
-        margin: 10px 20px;
-        position: relative;
-    }
-
-    .outer a {
-        padding: 10px 50px;
-        bottom: 10%;
-    }
-
-   
-
-
-    @media (min-width: 1500px) {
-
-        .outer h1 {
-            margin-top: 3%;
-            margin-bottom: 0%;
-        }
-    
-    {
 }
-    /* Page Specific */
+
+@media (min-width: 1400px) {
+    
+    .wall {
+        margin-top: 10%;
+    }
+
+    .wall-item h2 {
+        font-size: 2em;
+    }
+}
