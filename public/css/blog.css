@@ -87,7 +87,7 @@ p {
     transition: all 200ms;
 }
 
-.wall-item > img {
+.wall-item > a img {
     display: block;
     width: 100%;
     margin: 0 0 30px 0;
