@@ -97,6 +97,12 @@ ul li a:hover {
     margin-right: 20px;
 }
 
+.image-box.full img {
+    width: 100%;
+    height: auto;
+    margin: 0% auto;
+}
+
 .image-box h3 {
     font-size: 1.2em;
 }
